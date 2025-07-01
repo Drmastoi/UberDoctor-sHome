@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {
+  };
+  objectVersion = 56;
+  objects = {
+
+    /* Begin PBXBuildFile section */
+    9E217F83CD564B0A /* UberDoctorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B689FD324CA1E; };
+    83B97D6F0AE2154C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965AE087F1C42BD; };
+    289E10D3CB7F4A56 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79CD0F46581E2A3; };
+    F270AD3EC41B5869 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72359E806BFC41AD; };
+    2FBC4DEA65710938 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A86B1570E4D9C; };
+    8D76CA543F21E90B /* AppointmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E367F98215C0AB; };
+    7380F64CDB51EA29 /* DoctorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0E426C37D1B85; };
+    FD389EB275601A4C /* UberDoctorsHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE69325410CF78DB; };
+    018234B7F95AC6DE /* UberDoctorsHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6C8F1034A27DE; };
+    71FC4B98DAE62350 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40831EF7B25AD96; };
+    /* End PBXBuildFile section */
+
+    /* Begin PBXFileReference section */
+    061B437E52D8AF9C /* UberDoctorsHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UberDoctorsHome.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+    075B689FD324CA1E /* UberDoctorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UberDoctorApp.swift"; sourceTree = "<group>"; };
+    3965AE087F1C42BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView.swift"; sourceTree = "<group>"; };
+    B79CD0F46581E2A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User.swift"; sourceTree = "<group>"; };
+    72359E806BFC41AD /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appointment.swift"; sourceTree = "<group>"; };
+    3F2A86B1570E4D9C /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthViewModel.swift"; sourceTree = "<group>"; };
+    D4E367F98215C0AB /* AppointmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppointmentViewModel.swift"; sourceTree = "<group>"; };
+    9FA0E426C37D1B85 /* DoctorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoctorViewModel.swift"; sourceTree = "<group>"; };
+    AE69325410CF78DB /* UberDoctorsHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UberDoctorsHomeTests.swift"; sourceTree = "<group>"; };
+    95B6C8F1034A27DE /* UberDoctorsHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UberDoctorsHomeUITests.swift"; sourceTree = "<group>"; };
+    A718D3FE02C9B456 /* UberDoctorsHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UberDoctorsHomeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+    7C58D0E6B12F349A /* UberDoctorsHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UberDoctorsHomeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+    C40831EF7B25AD96 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+    /* End PBXFileReference section */
+
+    /* Begin PBXFrameworksBuildPhase section */
+    470E18B5A3F29D6C /* Frameworks */ = {
+      isa = PBXFrameworksBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        71FC4B98DAE62350 /* SwiftUI.framework in Frameworks */
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+    1A7BF0E52439CD68 /* Frameworks */ = {
+      isa = PBXFrameworksBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+    A9DF601BE48732C5 /* Frameworks */ = {
+      isa = PBXFrameworksBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+    /* End PBXFrameworksBuildPhase section */
+
+    /* Begin PBXGroup section */
+    51DB9E6203FC8A47 /* Main Group */ = {
+      isa = PBXGroup;
+      children = (
+        0AD6E128B547F93C /* UberDoctorsHome */,
+        30725E164A9FDBC8 /* UberDoctorsHomeTests */,
+        07A389152FDBE46C /* UberDoctorsHomeUITests */,
+        91A3D7E5C46B02F8 /* Products */
+      );
+      sourceTree = "<group>";
+    };
+    0AD6E128B547F93C /* UberDoctorsHome */ = {
+      isa = PBXGroup;
+      children = (
+        465D38CFE907A12B,
+        0E1572BADFC36489,
+        075B689FD324CA1E,
+        3965AE087F1C42BD
+      );
+      path = "UberDoctorsHome";
+      sourceTree = "<group>";
+    };
+    
+    465D38CFE907A12B /* Models */ = {
+      isa = PBXGroup;
+      children = (
+        B79CD0F46581E2A3,
+        72359E806BFC41AD
+      );
+      path = "Models";
+      sourceTree = "<group>";
+    };
+    0E1572BADFC36489 /* ViewModels */ = {
+      isa = PBXGroup;
+      children = (
+        3F2A86B1570E4D9C,
+        D4E367F98215C0AB,
+        9FA0E426C37D1B85
+      );
+      path = "ViewModels";
+      sourceTree = "<group>";
+    };
+    30725E164A9FDBC8 /* UberDoctorsHomeTests */ = {
+      isa = PBXGroup;
+      children = (
+        AE69325410CF78DB /* UberDoctorsHomeTests.swift */
+      );
+      path = "UberDoctorsHomeTests";
+      sourceTree = "<group>";
+    };
+    07A389152FDBE46C /* UberDoctorsHomeUITests */ = {
+      isa = PBXGroup;
+      children = (
+        95B6C8F1034A27DE /* UberDoctorsHomeUITests.swift */
+      );
+      path = "UberDoctorsHomeUITests";
+      sourceTree = "<group>";
+    };
+    91A3D7E5C46B02F8 /* Products */ = {
+      isa = PBXGroup;
+      children = (
+        061B437E52D8AF9C /* UberDoctorsHome.app */,
+        A718D3FE02C9B456 /* UberDoctorsHomeTests.xctest */,
+        7C58D0E6B12F349A /* UberDoctorsHomeUITests.xctest */
+      );
+      name = Products;
+      sourceTree = "<group>";
+    };
+    /* End PBXGroup section */
+
+    /* Begin PBXNativeTarget section */
+    27915FAEB08D346C /* UberDoctorsHome */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = B4C3916A7E02D8F5 /* Build configuration list for PBXNativeTarget "UberDoctorsHome" */;
+      buildPhases = (
+        F2510ABC8D74936E /* Sources */,
+        470E18B5A3F29D6C /* Frameworks */
+      );
+      buildRules = (
+      );
+      dependencies = (
+      );
+      name = "UberDoctorsHome";
+      productName = "UberDoctorsHome";
+      productReference = 061B437E52D8AF9C /* UberDoctorsHome.app */;
+      productType = "com.apple.product-type.application";
+    };
+    70F8C14B2ED36A95 /* UberDoctorsHomeTests */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = F97A01C628345EBD /* Build configuration list for PBXNativeTarget "UberDoctorsHomeTests" */;
+      buildPhases = (
+        A529BF0463187DCE /* Sources */,
+        1A7BF0E52439CD68 /* Frameworks */
+      );
+      buildRules = (
+      );
+      dependencies = (
+        012EC6F5D8B93A74 /* PBXTargetDependency */
+      );
+      name = "UberDoctorsHomeTests";
+      productName = "UberDoctorsHomeTests";
+      productReference = A718D3FE02C9B456 /* UberDoctorsHomeTests.xctest */;
+      productType = "com.apple.product-type.bundle.unit-test";
+    };
+    80D356B174A9EC2F /* UberDoctorsHomeUITests */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 486D5E0F71293CAB /* Build configuration list for PBXNativeTarget "UberDoctorsHomeUITests" */;
+      buildPhases = (
+        52AB7C061E9438DF /* Sources */,
+        A9DF601BE48732C5 /* Frameworks */
+      );
+      buildRules = (
+      );
+      dependencies = (
+        0E6DC75B128394AF /* PBXTargetDependency */
+      );
+      name = "UberDoctorsHomeUITests";
+      productName = "UberDoctorsHomeUITests";
+      productReference = 7C58D0E6B12F349A /* UberDoctorsHomeUITests.xctest */;
+      productType = "com.apple.product-type.bundle.ui-testing";
+    };
+    /* End PBXNativeTarget section */
+
+    /* Begin PBXProject section */
+    0175E864F2D3C9BA /* Project object */ = {
+      isa = PBXProject;
+      attributes = {
+        LastSwiftUpdateCheck = 1500;
+        LastUpgradeCheck = 1500;
+        TargetAttributes = {
+          27915FAEB08D346C = {
+            CreatedOnToolsVersion = 15.0;
+          };
+          70F8C14B2ED36A95 = {
+            CreatedOnToolsVersion = 15.0;
+            TestTargetID = 27915FAEB08D346C;
+          };
+          80D356B174A9EC2F = {
+            CreatedOnToolsVersion = 15.0;
+            TestTargetID = 27915FAEB08D346C;
+          };
+        };
+      };
+      buildConfigurationList = 83E14B9F560CA2D7 /* Build configuration list for PBXProject "UberDoctorsHome" */;
+      compatibilityVersion = "Xcode 14.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (
+        en,
+        Base
+      );
+      mainGroup = 51DB9E6203FC8A47;
+      productRefGroup = 91A3D7E5C46B02F8 /* Products */;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (
+        27915FAEB08D346C /* UberDoctorsHome */,
+        70F8C14B2ED36A95 /* UberDoctorsHomeTests */,
+        80D356B174A9EC2F /* UberDoctorsHomeUITests */
+      );
+    };
+    /* End PBXProject section */
+
+    /* Begin PBXSourcesBuildPhase section */
+    F2510ABC8D74936E /* Sources */ = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        9E217F83CD564B0A,
+        83B97D6F0AE2154C,
+        289E10D3CB7F4A56,
+        F270AD3EC41B5869,
+        2FBC4DEA65710938,
+        8D76CA543F21E90B,
+        7380F64CDB51EA29
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+    A529BF0463187DCE /* Sources */ = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        FD389EB275601A4C /* UberDoctorsHomeTests.swift in Sources */
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+    52AB7C061E9438DF /* Sources */ = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        018234B7F95AC6DE /* UberDoctorsHomeUITests.swift in Sources */
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+    /* End PBXSourcesBuildPhase section */
+
+    /* Begin PBXContainerItemProxy section */
+    3CE762F1D4095A8B /* PBXContainerItemProxy */ = {
+      isa = PBXContainerItemProxy;
+      containerPortal = 0175E864F2D3C9BA /* Project object */;
+      proxyType = 1;
+      remoteGlobalIDString = 27915FAEB08D346C;
+      remoteInfo = "UberDoctorsHome";
+    };
+    341DBE082A56F7C9 /* PBXContainerItemProxy */ = {
+      isa = PBXContainerItemProxy;
+      containerPortal = 0175E864F2D3C9BA /* Project object */;
+      proxyType = 1;
+      remoteGlobalIDString = 27915FAEB08D346C;
+      remoteInfo = "UberDoctorsHome";
+    };
+    /* End PBXContainerItemProxy section */
+
+    /* Begin PBXTargetDependency section */
+    012EC6F5D8B93A74 /* PBXTargetDependency */ = {
+      isa = PBXTargetDependency;
+      target = 27915FAEB08D346C /* UberDoctorsHome */;
+      targetProxy = 3CE762F1D4095A8B /* PBXContainerItemProxy */;
+    };
+    0E6DC75B128394AF /* PBXTargetDependency */ = {
+      isa = PBXTargetDependency;
+      target = 27915FAEB08D346C /* UberDoctorsHome */;
+      targetProxy = 341DBE082A56F7C9 /* PBXContainerItemProxy */;
+    };
+    /* End PBXTargetDependency section */
+
+    /* Begin XCBuildConfiguration section */
+    70F59614E2BAD38C /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        ALWAYS_SEARCH_USER_PATHS = NO;
+        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+        CLANG_ANALYZER_NONNULL = YES;
+        CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+        CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+        CLANG_ENABLE_MODULES = YES;
+        CLANG_ENABLE_OBJC_ARC = YES;
+        CLANG_ENABLE_OBJC_WEAK = YES;
+        CODE_SIGN_STYLE = Automatic;
+        CURRENT_PROJECT_VERSION = 1;
+        DEVELOPMENT_ASSET_PATHS = "";
+        DEVELOPMENT_TEAM = "";
+        ENABLE_PREVIEWS = YES;
+        ENABLE_STRICT_OBJC_MSGSEND = YES;
+        ENABLE_TESTABILITY = YES;
+        FRAMEWORK_SEARCH_PATHS = (
+          "$(inherited)",
+          "$(SDKROOT)/System/Library/Frameworks"
+        );
+        GCC_C_LANGUAGE_STANDARD = gnu11;
+        GCC_DYNAMIC_NO_PIC = NO;
+        GCC_NO_COMMON_BLOCKS = YES;
+        GCC_OPTIMIZATION_LEVEL = 0;
+        GCC_PREPROCESSOR_DEFINITIONS = (
+          "DEBUG=1",
+          "$(inherited)",
+        );
+        GENERATE_INFOPLIST_FILE = YES;
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+        INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+        IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+        LD_RUNPATH_SEARCH_PATHS = (
+          "$(inherited)",
+          "@executable_path/Frameworks",
+        );
+        MARKETING_VERSION = 1.0;
+        MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+        MTL_FAST_MATH = YES;
+        ONLY_ACTIVE_ARCH = YES;
+        PRODUCT_BUNDLE_IDENTIFIER = "com.example.uberdoctorshome";
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+        SUPPORTS_MACCATALYST = NO;
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+        SWIFT_EMIT_LOC_STRINGS = YES;
+        SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+      };
+      name = Debug;
+    };
+    6048B572CADE931F /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        ALWAYS_SEARCH_USER_PATHS = NO;
+        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+        CLANG_ANALYZER_NONNULL = YES;
+        CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+        CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+        CLANG_ENABLE_MODULES = YES;
+        CLANG_ENABLE_OBJC_ARC = YES;
+        CLANG_ENABLE_OBJC_WEAK = YES;
+        CODE_SIGN_STYLE = Automatic;
+        COPY_PHASE_STRIP = NO;
+        CURRENT_PROJECT_VERSION = 1;
+        DEVELOPMENT_ASSET_PATHS = "";
+        DEVELOPMENT_TEAM = "";
+        ENABLE_NS_ASSERTIONS = NO;
+        ENABLE_PREVIEWS = YES;
+        ENABLE_STRICT_OBJC_MSGSEND = YES;
+        FRAMEWORK_SEARCH_PATHS = (
+          "$(inherited)",
+          "$(SDKROOT)/System/Library/Frameworks"
+        );
+        GCC_C_LANGUAGE_STANDARD = gnu11;
+        GCC_NO_COMMON_BLOCKS = YES;
+        GENERATE_INFOPLIST_FILE = YES;
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+        INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+        IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+        LD_RUNPATH_SEARCH_PATHS = (
+          "$(inherited)",
+          "@executable_path/Frameworks",
+        );
+        MARKETING_VERSION = 1.0;
+        MTL_ENABLE_DEBUG_INFO = NO;
+        MTL_FAST_MATH = YES;
+        PRODUCT_BUNDLE_IDENTIFIER = "com.example.uberdoctorshome";
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+        SUPPORTS_MACCATALYST = NO;
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+        SWIFT_COMPILATION_MODE = wholemodule;
+        SWIFT_EMIT_LOC_STRINGS = YES;
+        SWIFT_OPTIMIZATION_LEVEL = "-O";
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+        VALIDATE_PRODUCT = YES;
+      };
+      name = Release;
+    };
+    B01A852643C79DFE /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        BUNDLE_LOADER = "$(TEST_HOST)";
+        CODE_SIGN_STYLE = Automatic;
+        CURRENT_PROJECT_VERSION = 1;
+        GENERATE_INFOPLIST_FILE = YES;
+        IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+        MARKETING_VERSION = 1.0;
+        PRODUCT_BUNDLE_IDENTIFIER = "com.example.uberdoctorshome.Tests";
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+        SUPPORTS_MACCATALYST = NO;
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+        SWIFT_EMIT_LOC_STRINGS = NO;
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+        TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberDoctorsHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UberDoctorsHome";
+      };
+      name = Debug;
+    };
+    AE6093F27B1D48C5 /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        BUNDLE_LOADER = "$(TEST_HOST)";
+        CODE_SIGN_STYLE = Automatic;
+        CURRENT_PROJECT_VERSION = 1;
+        GENERATE_INFOPLIST_FILE = YES;
+        IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+        MARKETING_VERSION = 1.0;
+        PRODUCT_BUNDLE_IDENTIFIER = "com.example.uberdoctorshome.Tests";
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+        SUPPORTS_MACCATALYST = NO;
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+        SWIFT_EMIT_LOC_STRINGS = NO;
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+        TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberDoctorsHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UberDoctorsHome";
+        VALIDATE_PRODUCT = YES;
+      };
+      name = Release;
+    };
+    AC8BD4E3501279F6 /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        CODE_SIGN_STYLE = Automatic;
+        CURRENT_PROJECT_VERSION = 1;
+        GENERATE_INFOPLIST_FILE = YES;
+        MARKETING_VERSION = 1.0;
+        PRODUCT_BUNDLE_IDENTIFIER = "com.example.uberdoctorshome.UITests";
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+        SUPPORTS_MACCATALYST = NO;
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+        SWIFT_EMIT_LOC_STRINGS = NO;
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+        TEST_TARGET_NAME = UberDoctorsHome;
+      };
+      name = Debug;
+    };
+    61AC97D8B4F03E52 /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        CODE_SIGN_STYLE = Automatic;
+        CURRENT_PROJECT_VERSION = 1;
+        GENERATE_INFOPLIST_FILE = YES;
+        MARKETING_VERSION = 1.0;
+        PRODUCT_BUNDLE_IDENTIFIER = "com.example.uberdoctorshome.UITests";
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+        SUPPORTS_MACCATALYST = NO;
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+        SWIFT_EMIT_LOC_STRINGS = NO;
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+        TEST_TARGET_NAME = UberDoctorsHome;
+        VALIDATE_PRODUCT = YES;
+      };
+      name = Release;
+    };
+    /* End XCBuildConfiguration section */
+
+    /* Begin XCConfigurationList section */
+    83E14B9F560CA2D7 /* Build configuration list for PBXProject "UberDoctorsHome" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        70F59614E2BAD38C /* Debug */,
+        6048B572CADE931F /* Release */
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    B4C3916A7E02D8F5 /* Build configuration list for PBXNativeTarget "UberDoctorsHome" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        70F59614E2BAD38C /* Debug */,
+        6048B572CADE931F /* Release */
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    F97A01C628345EBD /* Build configuration list for PBXNativeTarget "UberDoctorsHomeTests" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        B01A852643C79DFE /* Debug */,
+        AE6093F27B1D48C5 /* Release */
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    486D5E0F71293CAB /* Build configuration list for PBXNativeTarget "UberDoctorsHomeUITests" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        AC8BD4E3501279F6 /* Debug */,
+        61AC97D8B4F03E52 /* Release */
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    /* End XCConfigurationList section */
+
+  };
+  rootObject = 0175E864F2D3C9BA /* Project object */;
+}
